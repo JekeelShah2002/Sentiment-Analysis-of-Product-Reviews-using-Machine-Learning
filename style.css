@@ -1,0 +1,97 @@
+section[data-testid='stSidebar'] {
+    background-color: #111;
+    min-width:unset !important;
+    width: unset !important;
+    flex-shrink: unset !important;
+    
+}
+
+button[kind="header"] {
+    background-color: transparent;
+    color:rgb(180, 167, 141)
+}
+
+@media(hover){
+    /* header element to be removed */
+    header[data-testid="stHeader"] {
+        display:none;
+    }
+
+    /* The navigation menu specs and size */
+    section[data-testid='stSidebar'] > div {
+        height: 100%;
+        width: 95px;
+        position: relative;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s ease;
+        padding-top: 60px;
+        white-space: nowrap;
+    }
+
+    /* The navigation menu open and close on hover and size */
+    /* section[data-testid='stSidebar'] > div {
+    height: 100%;
+    width: 75px; /* Put some width to hover on. */
+    /* } 
+
+    /* ON HOVER */
+    section[data-testid='stSidebar'] > div:hover{
+    width: 300px;
+    }
+
+    /* The button on the streamlit navigation menu - hidden */
+    button[kind="header"] {
+        display: none;
+    }
+}
+     
+@media(max-width: 272px){
+    
+    section[data-testid='stSidebar'] > div {
+        width:15rem;
+    }
+}
+
+input[type='text']{
+    font-size: large;
+}
+
+/* Search Button */
+body {
+    color: #fff;
+    background-color: #4F8BF9;
+}
+
+.stButton>button {
+    color: #4F8BF9;
+    /* border-radius: 90%; */
+    height: 2em;
+    width: 5em;
+}
+
+.stTextInput>div>div>input {
+    color: #4F8BF9;
+}
+
+/* CSS for border around a text */
+/*   
+.highlight {
+    border-radius: 0.4rem;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .bold {
+    padding-left: 1rem;
+    font-weight: 700;
+  }
+  .blue {
+    background-color: lightcoral;
+  }
+  .red {
+    background-color: lightblue;
+  } */
